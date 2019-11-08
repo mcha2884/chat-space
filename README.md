@@ -5,7 +5,7 @@
 |id|integer|null:false|
 |name|string|null:false|
 ### Association
-- belongs_to :message
+- has_many :message
 - has_many :users,through: :groups_users
 - has_many :groups_users
 
@@ -14,8 +14,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null:false|
-|body|text|null:false|
-|image|string|null:false|
+|body|text|
+|image|string|
 |user_id|integer|null:false,foreign_key:true|
 |group_id|integer|null:false,foreign_key:true|
 
@@ -34,7 +34,7 @@
 
 ### Association
 - has_many :groups,through: :groups_users
-- belongs_to :message
+- has_many :message
 - has_many :groups_users
 
 ## groups_usersテーブル
