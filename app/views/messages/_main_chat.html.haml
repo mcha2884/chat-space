@@ -6,7 +6,7 @@
       .chat-group-messeage
         %h3 Member:
     .right_chat-header
-      %a{:href => "#"}
+      %link_to{href: "#"}
         %h3 Edit
   .main_chat-body
     .chat-body_person
@@ -15,9 +15,9 @@
       %p 初めての投稿です。
   .main-chat-form
     .form-input
-      %input{:placeholder => "type a message", :type => "text"}/
+      %input{placeholder:"type a message", type:  "text"}/
       %label
         .fas.fa-image
-        %input.file-coll{:type => "file"}/
+        %input.file-coll{type: "file"}/
     .form-submit
-      %input{:type => "submit", :value => "SENT"}/
+      %input{type: "submit", value: "SENT"}/
