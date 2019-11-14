@@ -1,9 +1,4 @@
 
-
-.wrapper {
-  display:flex;
-}
-
 .side-header{
   display:flex;
   width:300px;
@@ -15,16 +10,15 @@
   font-size:16px;
   font-weight:bold;
   color:#fff;
-}
-
-.side-header__box{
-  display:flex;
-  justify-content: space-between;
-  width:100%;
-  font-weight:bold;
-}
-.side-header__box__menu{
-  display:flex;
+  &__box {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    font-weight:bold;
+  }
+  &__box__menu {
+    display:flex;
+  }
 }
 .fa-edit{
   color:#fff;
@@ -33,27 +27,26 @@
   color:#fff;
 }
   
-
 .groups{
-  height:calc(100vh - 100px);
-  padding:20px 20px 0;
+  height:calc(100vh - 70px);
+  padding:0 20px;
   width:300px;
   background-color:#2f3e51;
   overflow:scroll;
   box-sizing:border-box;
-}
-.group-wrap{
-padding:20px 0 40px 0;
-}
-.group_name{
-  color:#fff;
-  font-weight:bold;
-  font-size:15px;
-
-}
-.group_messeage{
-  color:#fff;
-  font-weight:bold;
-  font-size:11px;
-}
+    .group {
+    padding:20px 0 40px 0;
+    &__name{
+    color:#fff;
+    font-weight:bold ;
+    font-size:15px ;
+    }  
+    &__messeage{
+    color:#fff;
+    font-weight:bold ;
+    font-size:11px ;
+    margin-top:5px ;
+    }
+  }
+}   
 
