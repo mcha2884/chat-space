@@ -1,20 +1,30 @@
-!!!
-%html
-  %body
-    .chat-side
-      .side-header
-        .side-header__box
-          %p.side-header__box__user-name tanaka
-          %ul.side-header__box__menu
-            %li.side-header__box__menu__new-group
-              %link_to{href: "/groups/new"}
-                %i.fa.fa-edit
-            %li.side-header__box__menu__edit-user
-              %link_to{href: "/users/2180/edit"}
-                %i.fa.fa-cog
-      .groups
-        .group
-          .group__name
-            ミノル組
-          .group__messeage
-            メッセージ
+.chat-side
+  .side-header
+    .side-header__box
+      .side-header__box__user-name 
+        %p tanaka
+      .side-header__box__menu
+        %ul
+          %li.side-header__box__menu__new-group
+            -# = link_to edit_user_path do
+            -#   = fa.icon "edit", class: "icon"
+          %li.side-header__box__menu__edit-user
+            -# = link_to edit_user_path do
+            -#   = fa.icon "cog", class: "icon"
+
+  .groups
+    .group
+      .group__name
+        グループ名
+      .group__message
+        新着メッセージ
+    .group
+      .group__name
+        グループ名
+      .group__message
+        新着メッセージ
+    .group
+      .group__name
+        グループ名
+      .group__message
+        新着メッセージ
